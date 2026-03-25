@@ -2,8 +2,8 @@
 
 ## 👥 Alumnos
 
--   **Bonilla Ojeda Gustavo Sebastián** - 2025630175\
--   **Velázquez Mendoza Ximena** - 2024630176\
+-   **Bonilla Ojeda Gustavo Sebastián** - 2025630175
+-   **Velázquez Mendoza Ximena** - 2024630176
 -   **Velázquez Ramos Yoltic Isaí** - 2025230228
 
 **Grupo:** 4CM4\
