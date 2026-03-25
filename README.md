@@ -27,22 +27,22 @@ de diferentes formatos de entrada.
 
 Se resolvieron los ejercicios de:
 
--   **Lista 2:** Autómatas Finitos Deterministas\
+-   **Lista 2:** Autómatas Finitos Deterministas
 -   **Lista 3:** AFND y transiciones λ
 
 #### ✔️ Diseño y validación
 
 -   Construcción de grafos en JFLAP\
 -   Validación con:
-    -   5 cadenas válidas\
-    -   5 cadenas inválidas\
+    -   5 cadenas válidas
+    -   5 cadenas inválidas
 -   Uso de simulación paso a paso para observar bifurcaciones
 
 #### 🔄 Análisis y conversión
 
 -   Cálculo de **λ-clausura**
 -   Conversión:
-    1.  AFND-λ → AFND\
+    1.  AFND-λ → AFND
     2.  AFND → AFD
 
 ------------------------------------------------------------------------
@@ -51,7 +51,7 @@ Se resolvieron los ejercicios de:
 
 Se desarrolló un software interactivo en:
 
--   **Lenguaje:** Python 3\
+-   **Lenguaje:** Python 3
 -   **GUI:** Tkinter
 
 #### ⚙️ Funcionalidades principales
@@ -59,41 +59,41 @@ Se desarrolló un software interactivo en:
 ##### ✏️ Creación y edición manual
 
 -   Definición de la quíntupla:
-    -   Alfabeto\
-    -   Estados\
-    -   Estado inicial\
-    -   Estados de aceptación\
+    -   Alfabeto
+    -   Estados
+    -   Estado inicial
+    -   Estados de aceptación
     -   Matriz de transiciones
 
 ##### 📂 Importación y exportación
 
 -   Formatos soportados:
-    -   `.jff` (JFLAP)\
-    -   `.xml`\
-    -   `.json`\
+    -   `.jff` (JFLAP)
+    -   `.xml`
+    -   `.json`
 -   Uso de:
-    -   `xml.etree.ElementTree`\
+    -   `xml.etree.ElementTree`
     -   `json`
 
 ##### ▶️ Validación y simulación
 
--   Validación rápida\
+-   Validación rápida
 -   Modo **Paso a Paso** con traza de estados
 
 ##### 📊 Visualización
 
 -   Grafo del autómata con:
-    -   `networkx`\
-    -   `matplotlib`\
+    -   `networkx`
+    -   `matplotlib`
 -   Tabla dinámica con `Treeview`
 
 ##### 🔤 Operaciones de lenguajes
 
--   Prefijos\
--   Sufijos\
--   Subcadenas\
+-   Prefijos
+-   Sufijos
+-   Subcadenas
 -   Cerraduras:
-    -   Positiva (Σ⁺)\
+    -   Positiva (Σ⁺)
     -   Kleene (Σ\*)
 
 ------------------------------------------------------------------------
@@ -106,13 +106,13 @@ Se desarrolló un software interactivo en:
 
 #### 📦 Bibliotecas nativas
 
--   `tkinter` / `ttk` → GUI\
--   `xml.etree.ElementTree` → XML / JFLAP\
+-   `tkinter` / `ttk` → GUI
+-   `xml.etree.ElementTree` → XML / JFLAP
 -   `json` → serialización
 
 #### 🌐 Bibliotecas externas
 
--   `networkx`\
+-   `networkx`
 -   `matplotlib`
 
 ``` bash
@@ -129,11 +129,11 @@ El sistema está dividido en tres bloques:
 
 #### 🧩 A) Operaciones de lenguajes formales
 
--   Uso de **slicing** y ciclos anidados\
+-   Uso de **slicing** y ciclos anidados
 -   Almacenamiento en **sets** para evitar duplicados
 
-**Implementaciones:** - Prefijos, sufijos y subcadenas\
-- Cerradura positiva (Σ⁺)\
+**Implementaciones:** - Prefijos, sufijos y subcadenas
+- Cerradura positiva (Σ⁺)
 - Cerradura de Kleene (Σ\*)
 
 ------------------------------------------------------------------------
@@ -146,7 +146,7 @@ Representa la quíntupla:
 
 ##### 📚 Estructuras de datos
 
--   Estados y alfabeto → `set` (O(1))\
+-   Estados y alfabeto → `set` (O(1))
 -   Transiciones → diccionario anidado
 
 ``` python
@@ -155,12 +155,12 @@ transiciones[origen][simbolo] = destino
 
 ##### 📥 Módulo de parseo
 
--   Importación desde `.jff` (XML)\
+-   Importación desde `.jff` (XML)
 -   Exportación a XML / JSON
 
 ##### 🔍 Validación
 
--   Procesamiento carácter por carácter\
+-   Procesamiento carácter por carácter
 -   Registro de la traza de estados
 
 ------------------------------------------------------------------------
@@ -173,7 +173,7 @@ transiciones[origen][simbolo] = destino
 
 ##### 📊 Simulación visual
 
--   Tabla con `Treeview`\
+-   Tabla con `Treeview`
 -   Grafo con `networkx` + `matplotlib`
 
 ##### 🔄 Paso a paso
